@@ -1,0 +1,282 @@
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+
+}
+button:hover{
+    background-color: rgb(104, 32, 172);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+.color-acento{color: blueviolet;
+display:flex;
+}
+header{
+    background-color: rgb(245,254,245);
+    
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+header .container{
+    display:flex;
+    flex-direction: colum;
+    align-items: center;
+    justify-content: space-between
+}
+
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    
+}
+.menu{
+    display:flex;
+    list-style: none;
+}
+
+header a{
+    display:flex;
+    padding: 20px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color:#a410da;
+    
+}
+header .a:hover{
+    color: blueviolet;
+    
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("media/IMG-20231025-WA0016.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero h1{
+    color: white;
+}
+#hero button{
+    font-size: 1.75em ;
+}
+
+#Nosotros.container{
+    text-align: center;
+    padding: 200px 12px ;
+
+}
+
+#Nosotros{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+
+}
+
+#Nosotros  .container{
+padding: 150px 12px;
+}
+#Nosotros h2{
+    margin-top: 0;
+    font-size: 4.2em;
+}
+#Nosotros p{
+    display: none;
+}
+
+#Nosotros .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 150px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("media/yo.jpg");  
+    
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+)
+    ,url("media/karen.jpg");
+    
+
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("media/david.jpg");
+    
+
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("media/santi.jpg");
+    
+
+}
+
+.carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("media/cristian.jpg");
+    
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+    color: black
+}
+.titulo{
+    color:blueviolet
+    
+}
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+#siguenos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:rgb(30,30,30) ;
+    color: white;
+    height: 80vh;
+}
+
+#siguenos h2{
+    font-size: 9vw;
+}
+
+#siguenos button{
+    font-size: 1.75em;
+    margin: 16px 16px;
+}
+
+
+    
+
+footer .imagen{
+    width: 140px;
+}
+footer .conte{
+    width: 100%;
+    background-color: #c8c804;
+}
+.conte{
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 10px 12px;
+    align-items: center;
+    
+}
+    
+
+footer .titulo-seccion{
+    color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+}
+.colum{
+    padding: 0px 0px;
+    display: block;
+    margin: 10px 20px;
+}
+.redes{
+    color: #c41c1c;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    font-size:30px;
+    padding:2px ;
+    margin: 10px 20px;
+
+}
